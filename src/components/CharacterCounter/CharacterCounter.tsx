@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import type { CharacterCounterProps } from '../../types';
 import { TextInput } from '../TextInput/TextInput';
 import { StatsDisplay } from '../StatsDisplay/StatsDisplay';
-
+// character counter component
+// combines TextInput and StatsDisplay, calculates stats
 export const CharacterCounter: React.FC<CharacterCounterProps> = ({
   minWords = 0,
   maxWords = Infinity,

@@ -1,6 +1,7 @@
 import React from 'react';
 import type { StatsDisplayProps } from '../../types';
-
+// stats display component
+//shows character count, word count, and optionally reading time
 export const StatsDisplay: React.FC<StatsDisplayProps> = ({ stats, showReadingTime = true }) => {
     return (
         <div className="mt-4 space-y-2">

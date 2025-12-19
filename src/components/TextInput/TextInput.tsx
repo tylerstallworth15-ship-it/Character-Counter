@@ -1,6 +1,7 @@
 import React from 'react';
 import type { TextInputProps } from '../../types';
-
+// TextInput components
+//renders a textarea and calls onTextChange on input change
 export const TextInput: React.FC<TextInputProps> = ({
     onTextChange,
     placeholder= 'Start Typing...',
