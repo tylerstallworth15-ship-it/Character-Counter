@@ -3,7 +3,7 @@ import { CharacterCounter } from './components/CharacterCounter/CharacterCounter
 function App() {
   return (
     <div className="App">
-      <CharacterCounter minWords={25} maxWords={100} targetReadingTime={5} />
+      <CharacterCounter targetReadingTime={5} />
     </div>
   );
 }

@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
-import type { CharacterCounterProps } from '../../types/types';
 import { TextInput } from '../TextInput/TextInput';
 import { StatsDisplay } from '../StatsDisplay/StatsDisplay';
 // character counter component
 // combines TextInput and StatsDisplay, calculates stats
+export interface CharacterCounterProps {
+  targetReadingTime?: number;
+}
+
 export const CharacterCounter: React.FC<CharacterCounterProps> = ({
-  minWords = 0,
-  maxWords = Infinity,
   targetReadingTime
 }) => {
     const [text, setText] = useState('');
