@@ -4,26 +4,28 @@ import { TextInput } from '../TextInput/TextInput';
 import { StatsDisplay } from '../StatsDisplay/StatsDisplay';
 
 export const CharacterCounter: React.FC<CharacterCounterProps> = ({
-    minWords
-    maxWords
+  minWords = 0,
+  maxWords = 0,
+  targetReadingTime = 0
 }) => {
-    const [text, setText] = useState('')
+  const [text, setText] = useState('');
 
-    Const
-    Const
-    Const
-    return { }
-};
+  const calculateStats = (input: string): TextStats => {
+    const characterCount = input.lenght;
+    const wordCount = input.trim() === '' ? 0 : input.trim().split(/\s+/).length;
+    const readingTime = wordCount / 200;
+    return { characterCount, wordCount, readingTime };
+  };
 
-const
+  const stats = calculateStats(text);
 
-return (
+  return (
     <div className="p-6 max-w-xl mx-auto">
-        <TextInput
-        <StatsDisplay 
-        <div className=
-          min:
-        </div>
-       </div>
-     );
-    };
+      <TextInput onTextChange={setText} />
+      <StatsDisplay stats={stats} />
+      <div className="mt-4 text-sm text-gray-600">
+        min: {minWords} | Max: {maxWords}
+      </div>
+    </div>
+  );
+};
