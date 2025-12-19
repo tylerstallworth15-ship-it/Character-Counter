@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import type { CharacterCounterProps } from '../../types';
+import type { CharacterCounterProps } from '../../types/types';
 import { TextInput } from '../TextInput/TextInput';
 import { StatsDisplay } from '../StatsDisplay/StatsDisplay';
 // character counter component

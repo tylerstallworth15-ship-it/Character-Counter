@@ -1,4 +1,3 @@
-import React from 'react';
 import { CharacterCounter } from './components/CharacterCounter/CharacterCounter'
 // Renders CC with props
 function App() {
