@@ -1,5 +1,5 @@
 import React from 'react';
-import { StatsDisplayProps } from '../../types';
+import type { StatsDisplayProps } from '../../types';
 
 export const StatsDisplay: React.FC<StatsDisplayProps> = ({ stats, showReadingTime = true }) => {
     return (

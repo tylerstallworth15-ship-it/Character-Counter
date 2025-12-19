@@ -16,7 +16,7 @@ export interface StatsDisplayProps {
 }
 
 export interface CharacterCounterProps {
-    micWords?: number;
+    minWords?: number;
     maxWords?: number;
     targetReadingTime?: number;
 }
